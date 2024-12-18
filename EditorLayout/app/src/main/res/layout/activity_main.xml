@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="417dp"
+        android:layout_height="51dp"
+        android:background="#3F51B5"
+        android:paddingStart="20dp"
+        android:paddingTop="5dp"
+        android:text="@string/hello_toast"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_toast"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#3F51B5"
+        android:onClick="showToast"
+        android:text="@string/button_label_toast"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="0dp"
+        app:layout_constraintHorizontal_bias="0.6" />
+
+
+    <TextView
+        android:id="@+id/show_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#FFEB3B"
+        android:gravity="center"
+        android:text="@string/button_initial_value"
+        android:textColor="#3F51B5"
+        android:textSize="160sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.448" />
+
+    <Button
+        android:id="@+id/button_count"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#3F51B5"
+        android:onClick="countUp"
+        android:text="@string/button_label_count"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="0dp" />
+
+</LinearLayout>
